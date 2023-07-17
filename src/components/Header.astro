@@ -1,25 +1,105 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
 ---
 
 <header>
-	<h2>
-		{SITE_TITLE}
-	</h2>
-	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
-		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
+	<div class="header">
+		<div class="top-bar">
+			<img src="images/logo.png" alt="" srcset="" />
+			<select name="" id="" class="top-select">
+				<option value="All">All</option>
+				<option value="Latest">Latest</option>
+				<option value="Trending">Trending</option>
+				<option value="Movies">Movies</option>
+				<option value="Shows">Shows</option>
+			</select>
+			<input
+				type="search"
+				name="search"
+				id="search"
+				placeholder="search here..."
+				class="top-search"
+			/>
+			<input type="submit" value="Go" class="top-btn" />
+			<div class="top-icons">
+				<img
+					src="/images/world.svg"
+					height="40px"
+					width="40px"
+					alt=""
+					srcset=""
+					class="top-icon"
+				/>
+				<img
+					src="/images/office-bag.svg"
+					alt=""
+					srcset=""
+					height="30px"
+					width="30px"
+					class="top-icon"
+				/>
+				<img
+					src="/images/icons8-notification.svg"
+					alt=""
+					srcset=""
+					height="30px"
+					width="30px"
+					class="top-icon"
+				/>
+				<img
+					src="/images/person.svg"
+					alt=""
+					srcset=""
+					height="50px"
+					width="50px"
+					class="profile"
+				/>
+			</div>
+		</div>
+	</div>
+
+	<nav class="nav">
+		<ul class="nav-items">
+			<li>
+				<a href="#" target="_blank" rel="noopener noreferrer">Home</a>
+			</li>
+			<li>
+				<a href="#" target="_blank" rel="noopener noreferrer">TV</a>
+			</li>
+			<li>
+				<a href="#" target="_blank" rel="noopener noreferrer">MOVIES</a>
+			</li>
+			<li>
+				<a href="#" target="_blank" rel="noopener noreferrer">DIGITAL</a
+				>
+			</li>
+			<li>
+				<a href="#" target="_blank" rel="noopener noreferrer"
+					>CELEBRITIES</a
+				>
+			</li>
+			<li>
+				<a href="#" target="_blank" rel="noopener noreferrer">VIDEOS</a>
+			</li>
+			<li>
+				<a href="#" target="_blank" rel="noopener noreferrer">GALLERY</a
+				>
+			</li>
+			<li>
+				<a href="#" target="_blank" rel="noopener noreferrer">FORUM</a>
+			</li>
+			<li>
+				<a href="#" target="_blank" rel="noopener noreferrer">STORIES</a
+				>
+			</li>
+			<li>
+				<a href="#" target="_blank" rel="noopener noreferrer">QUIZ</a>
+			</li>
+			<li>
+				<a href="#" target="_blank" rel="noopener noreferrer">HELP</a>
+			</li>
+		</ul>
 	</nav>
 </header>
-<style>
-	header {
-		margin: 0em 0 2em;
-	}
-	h2 {
-		margin: 0.5em 0;
-	}
-</style>
+<style></style>
