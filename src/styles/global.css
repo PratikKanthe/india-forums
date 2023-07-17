@@ -185,6 +185,12 @@ ul{
 
 .nav-items>li:first-child{
 	border-left: 1px solid #661256;
+	margin-left: 10rem;
+}
+
+.nav-items>li:last-child{
+	border-left: 1px solid #661256;
+	margin-right: 10rem;
 }
 
 .nav-items>li:hover{
@@ -220,16 +226,56 @@ ul{
 section{
 	display: block;
 	padding: 1rem;
+  	color: white;
+}
+
+.article-item__title{
+	position: relative;
+    top: -8vh;
+    left: 0.5vw;
+    color: #f2f2f2;
+	font-weight: bold;
+	font-size: 0.875rem;
+}
+
+.exclusive{
+	background-color: yellow;
+	color: black;
+	border-radius: 20px;
+	padding: 0.35rem;
+	font-size: 0.575rem;
+	margin: 0.25rem;
+}
+
+.breaking{
+	background-color: #e6073d;
+	color: white;
+	border-radius: 20px;
+	padding: 0.35rem;
+	font-size: 0.575rem;
+	margin: 0.25rem;
 }
 
 .article-list{
 	display: grid;
+	max-width: 1180px;
+    min-width: 304px;
+    margin: 0 auto;
 }
 
 .featured .article-list{
 	grid-template-columns: repeat(4,1fr);
-	gap: 2em;
+	gap: 0.5rem;
+
 }
+
+@media only screen and (min-width: 992px){
+	.article-item--exclusive:nth-child(1){
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+}
+
 
 img1{
 	grid-column: span 2;
@@ -317,8 +363,9 @@ h1{
 	color: #e6073d;
 }
 .content-items{
-	margin-bottom: 2rem;
-	margin-left: 5rem;
+	max-width: 1180px;
+    min-width: 304px;
+    margin: 0 auto;
 }
 
 .forums{
@@ -460,6 +507,8 @@ footer a:hover{
 	margin-top: 3rem;
 	padding: 1rem;
 	margin-bottom: 3rem;
+	color: black;
+	font-size: 1rem;
 }
 
 table{  
